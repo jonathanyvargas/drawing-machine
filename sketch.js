@@ -6,7 +6,7 @@ let animating = false;
 function preload() {
 
   for (let i = 0; i <= 5; i++) {
-    dragons[i] = loadImage(`Assets/Dragon_${i}.PNG`)
+    dragons[i] = loadImage(`Assets/Dragon_${i}.png`)
   }
 }
 
