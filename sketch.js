@@ -29,7 +29,10 @@ function randomizer() {
   image(random(dragons), width / 2, height / 2);
 
 
+
 }
+
+
 
 function keyTyped() {
 
@@ -39,14 +42,17 @@ function keyTyped() {
 
     randomizer();
 
-  } else if (key === 'r'){stroke(255, 0, 0)}
-  else if (key === 'g'){stroke(0, 255, 0)}
-  else if (key === 'b'){stroke(0, 0, 255)}
-  else if (key === 'k'){stroke(0)}
+  } else if (key === 'r') {
+    stroke(255, 0, 0)
+  } else if (key === 'g') {
+    stroke(0, 255, 0)
+  } else if (key === 'b') {
+    stroke(0, 0, 255)
+  } else if (key === 'k') {
+    stroke(0)
+  } else if (key === '/') {
 
-  else if (key === '/'){
-
-refresh();
+    refresh();
 
   }
 
@@ -54,14 +60,14 @@ refresh();
 }
 
 function draw() {
-    if (mouseIsPressed) {
-      line(mouseX, mouseY, pmouseX, pmouseY);
+  if (mouseIsPressed) {
+    line(mouseX, mouseY, pmouseX, pmouseY);
 
-
-    }
-  }
-
-  function refresh(){
-    window.location.reload("refresh")
 
   }
+}
+
+function refresh() {
+  window.location.reload("refresh")
+
+}
