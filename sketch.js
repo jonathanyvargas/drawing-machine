@@ -14,7 +14,7 @@ function setup() {
   cnv = createCanvas(500, 500);
   cnv.parent("#canvasDiv");
 
-  background(240);
+  // background(200, 200, 200);
   strokeWeight(5)
 
   imageMode(CENTER)
@@ -41,7 +41,9 @@ function keyTyped() {
     saveCanvas('fileName', 'png');
   } else if (key === 'Enter') {
 
-    randomizer();
+    randomizer(); 
+
+
 
   } else if (key === 'r') {
     stroke(255, 0, 0)
@@ -53,14 +55,20 @@ function keyTyped() {
     stroke(0)
   } else if (key === '/') {
 
-    refresh();
-
+    // refresh();
+    clear();
   }
 
 
 }
 
 function draw() {
+
+    background(250, 250, 250, 2);
+
+
+
+
   if (mouseIsPressed) {
     line(mouseX, mouseY, pmouseX, pmouseY);
 
