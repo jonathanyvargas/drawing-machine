@@ -41,7 +41,7 @@ function keyTyped() {
     saveCanvas('fileName', 'png');
   } else if (key === 'Enter') {
 
-    randomizer(); 
+    randomizer();
 
 
 

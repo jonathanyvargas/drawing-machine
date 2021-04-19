@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: fantasy;
+  font-family: fantasy: serif;
   font-
 
 }
@@ -12,16 +12,22 @@ body {
 canvas {
   margin: auto;
   display: block;
-  border: 5px solid black;
+  border-top: 15px solid;
+  border-bottom: 15px solid;
+  border-left: 15px solid;
+  border-right: 15px solid;
+  border-image: url(assets/rough-line.png) 45%;
 
+
+
+
+}
+
+
+.row {
+  display: flex;
 }
 
 .column {
-  margin: 10px;
-  flex;
-}
-
-.row {
-  display:
-  flex;
+  flex: 50%;
 }
